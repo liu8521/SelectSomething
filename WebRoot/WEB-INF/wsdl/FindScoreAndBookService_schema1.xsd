@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://UI.liuning.cn/" targetNamespace="http://UI.liuning.cn/" version="1.0">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="getCetScore" type="tns:getCetScore"/>
+
+  <xs:element name="getCetScoreResponse" type="tns:getCetScoreResponse"/>
+
+  <xs:element name="getLibraryInfo" type="tns:getLibraryInfo"/>
+
+  <xs:element name="getLibraryInfoResponse" type="tns:getLibraryInfoResponse"/>
+
+  <xs:complexType name="getCetScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCetScoreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLibraryInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLibraryInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
